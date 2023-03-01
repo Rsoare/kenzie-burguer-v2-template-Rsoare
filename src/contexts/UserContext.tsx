@@ -58,6 +58,7 @@ export const UserProvider = ({ children }: iDefaultProviderProps) => {
          localStorage.setItem('@Hamburgueria:Token', response.data.accessToken);
       } catch (error) {
          console.error(error);
+         toast.error("Usuario ou senha incorretos")
       }
    };
 
