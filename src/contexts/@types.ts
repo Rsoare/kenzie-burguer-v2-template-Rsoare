@@ -9,6 +9,7 @@ export interface iUser {
    email: string;
 }
 
+export type iUserId = string
 export interface iUserLogin {
    email: string;
    password: string;
@@ -47,7 +48,7 @@ export interface iProductsContext{
 }
 
 export interface iCartProducts{
-   id:number 
+   id:number
    name:string
    img:string
 }
