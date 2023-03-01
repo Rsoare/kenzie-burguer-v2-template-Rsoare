@@ -41,13 +41,13 @@ const RegisterForm = () => {
          />
          <Input
             label='Senha'
-            type='text'
+            type='password'
             register={register('password')}
             error={errors.password}
          />
          <Input
             label='Comfirmação de Senha'
-            type='text'
+            type='password'
             register={register('confirmationPassword')}
             error={errors.confirmationPassword}
          />

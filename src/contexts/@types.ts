@@ -48,6 +48,7 @@ export interface iProductsContext{
 }
 
 export interface iCartProducts{
+   price: any;
    id:number
    name:string
    img:string
