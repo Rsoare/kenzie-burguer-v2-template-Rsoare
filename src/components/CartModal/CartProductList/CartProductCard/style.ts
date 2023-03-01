@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledCartProductCard = styled.li`
    display: flex;
@@ -19,11 +19,11 @@ export const StyledCartProductCard = styled.li`
          object-fit: contain;
       }
 
-      @media (max-width: 450px){
+      @media (max-width: 450px) {
          width: 40px;
          height: 40px;
-         
-         img{
+
+         img {
             width: 40px;
             height: 40px;
          }
@@ -37,14 +37,14 @@ export const StyledCartProductCard = styled.li`
       padding-right: 20px;
       gap: 20px;
 
-      button{
-        background: transparent;
-        opacity: .4;
-        transition: .4s;
+      button {
+         background: transparent;
+         opacity: 0.4;
+         transition: 0.4s;
 
-        :hover{
-            opacity: .7;
-        }
+         :hover {
+            opacity: 0.7;
+         }
       }
    }
 `;
