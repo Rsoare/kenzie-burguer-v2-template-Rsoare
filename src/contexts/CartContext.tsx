@@ -34,7 +34,7 @@ export const CartProvide = ({ children }: iDefaultProviderProps) => {
 
    const removeCartProduct = (productId: iCartProductId) => {
       const newCartProducts = CartProducts.filter(
-         (CartProduct) => CartProduct.id !== productId
+         (CartProduct) => CartProduct.id !== productId.id
       );
       SetCartProducts(newCartProducts);
       toast.success('Produto removido com sucesso');

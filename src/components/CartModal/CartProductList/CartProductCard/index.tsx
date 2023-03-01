@@ -9,7 +9,7 @@ import { iCartProductProps} from '../../../../contexts/@types';
 const CartProductCard = ({product}:iCartProductProps) => {
    const { removeCartProduct} = useContext(CartContexts);
 
-   const {name,img,id} = product
+   const {name,img,} = product
 
 
    return (
@@ -21,7 +21,7 @@ const CartProductCard = ({product}:iCartProductProps) => {
             <StyledTitle tag='h3' $fontSize='three'>
                {name}
             </StyledTitle>
-            <button type='button' aria-label='Remover' onClick={()=> removeCartProduct(id)}>
+            <button type='button' aria-label='Remover' onClick={()=> removeCartProduct(product)}>
                <MdDelete size={24} />
             </button>
          </div>

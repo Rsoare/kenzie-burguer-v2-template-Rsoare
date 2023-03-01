@@ -1,4 +1,3 @@
-import { string } from "yup";
 
 export interface iDefaultProviderProps {
    children: React.ReactNode;
@@ -48,7 +47,7 @@ export interface iProductsContext{
 }
 
 export interface iCartProducts{
-   id:number
+   id:number 
    name:string
    img:string
 }
@@ -71,6 +70,6 @@ export interface iCartContext{
    removeCartProduct: (productId: iCartProductId) => void
 }
 
-export type iUserId = string
+
 
 
